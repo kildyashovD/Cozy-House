@@ -1,0 +1,51 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 910px;
+  margin: auto;
+  margin-bottom: 65px;
+
+  position: relative;
+}
+
+.slider__previous,
+.slider__next {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+  font-size: 0;
+
+  background-image: url("../img/long-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f1cdb3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.slider__previous {
+  top: 180px;
+  left: -130px;
+}
+
+.slider__next {
+  top: 180px;
+  right: -130px;
+
+  transform: rotate(180deg);
+}
