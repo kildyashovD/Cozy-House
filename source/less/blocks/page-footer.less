@@ -1,0 +1,104 @@
+.page-footer {
+  min-height: 362px;
+
+  background-image: url("../img/footer@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-footer__wrapper {
+  display: flex;
+}
+
+.page-footer__item {
+  box-sizing: border-box;
+
+  width: 443px;
+  padding-right: 150px;
+  padding-top: 80px;
+}
+
+.page-footer__heading {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2.6px;
+}
+
+.page-footer__mail,
+.page-footer__tel,
+.page-footer__address {
+  display: inline-block;
+
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 57px;
+  min-height: 50px;
+
+  font-family: "Times New Roman", sans-serif;
+  color: #f1cdb3;
+  font-style: normal;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+
+.page-footer__mail {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 26px;
+
+
+    background-image: url("../img/envelope.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.page-footer__tel {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 40px;
+    height: 32px;
+
+
+    background-image: url("../img/telephone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.page-footer__address {
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 26px;
+    height: 36px;
+
+
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
