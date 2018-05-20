@@ -6,7 +6,7 @@ node_js:
 notifications:
   email: false
 
-scripts:
+script:
   - npm run build
 
 deploy:
