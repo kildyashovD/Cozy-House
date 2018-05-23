@@ -30,7 +30,13 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 .page-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 60px;
+}
+.our-pets-page .page-header {
+  padding-top: 32px;
+  min-height: 112px;
 }
 .page-header__wrapper {
   display: -webkit-box;
@@ -63,10 +69,16 @@ input[type="radio"].visually-hidden {
   margin-left: 40px;
   min-height: 47px;
 }
+.page-header .main-nav__item {
+  padding-top: 10px;
+}
 .main-nav__link {
   font-size: 15px;
   line-height: 29px;
   color: #cdcdcd;
+}
+.main-nav__link--black-color {
+  color: #545454;
 }
 .page-preview {
   min-height: 925px;
@@ -166,6 +178,9 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #f6f6f6;
 }
+.our-pets-page .our-pets {
+  margin-bottom: 0;
+}
 .our-pets__heading {
   max-width: 430px;
   margin: 0 auto;
@@ -215,6 +230,14 @@ input[type="radio"].visually-hidden {
   margin: auto;
   margin-bottom: 65px;
   position: relative;
+}
+.our-pets-page .slider {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+}
+.our-pets-page .slider__item {
+  margin-bottom: 32px;
 }
 .slider__previous,
 .slider__next {
@@ -416,4 +439,51 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.pets-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+.pets-nav__item {
+  margin-bottom: 32px;
+}
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pagination__link {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 17px;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  color: #000000;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+}
+.pagination__link:hover {
+  background-color: #f1cdb3;
+}
+.pagination__link:active {
+  opacity: 0.6;
 }
