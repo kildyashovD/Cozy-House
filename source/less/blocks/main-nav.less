@@ -25,11 +25,24 @@
 }
 
 .main-nav__link {
+  display: block;
+  box-sizing: border-box;
+
+  height: 100%;
+
   font-size: 15px;
   line-height: 29px;
   color: rgb(205, 205, 205);
 
   &--black-color {
     color: #545454;
+  }
+
+  &:hover {
+    border-bottom: 3px solid #f1cdb3;
+  }
+
+  &--active {
+    border-bottom: 3px solid #f1cdb3;
   }
 }
