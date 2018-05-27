@@ -79,7 +79,7 @@
             <img class="pet-card__img" width="270" height="270" src="img/Cat@1x.png" alt="Cat">
             <div class="pet-card__text-content">
               <p class="pet-card__name">Katrine</p>
-              <a class="pet-card__link button button--empty-bg" href="#">Learn More</a>
+              <a class="pet-card__link button button--empty-bg" href="#" id="showPetCard1">Learn More</a>
             </div>
           </div>
 
@@ -103,9 +103,33 @@
           <button class="slider__next" type="button" name="button">Next</button>
         </div>
 
-        <a class="our-pets__link button" href="#">Get to know the rest</a>
+        <a class="our-pets__link button"  href="#">Get to know the rest</a>
 
       </div>
+
+    </section>
+
+    <section class="pets-modal" id="modalWindow">
+
+        <div class="pets-modal__item pet-card pet-card--modal" id="petsModal1">
+          <div class="pet-card__img-block">
+            <img class="pet-card__img pet-card__img--modal" width="270" height="270" src="img/Charlie-modal@1x.jpg" alt="Cat">
+          </div>
+          <div class="pet-card__text-content pet-card__text-content--modal">
+            <p class="pet-card__name pet-card__name--modal">Charly</p>
+            <p class="pet-card__breed">Pooch</p>
+            <p class="pet-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+            <ul class="pet-card__description-list">
+              <li class="pet-card__description-item">Age: 2 months</li>
+              <li class="pet-card__description-item">Inoculations: none</li>
+              <li class="pet-card__description-item">Diseases: none</li>
+              <li class="pet-card__description-item">Parasites: none</li>
+            </ul>
+          </div>
+
+          <button class="pets-modal__close-button" id="closePetCard1" type="button" name="button"></button>
+
+        </div>
 
     </section>
 
@@ -137,8 +161,7 @@
                     c0-15.461,12.577-28.038,28.038-28.038s28.038,12.577,28.038,27.994l-0.019,0.661c-0.121,5.859,3.942,10.973,9.677,12.18
                     C303.545,312.425,313.061,325.172,311.996,339.195z"/>
                   <path d="M252.165,219.947c21.847,0,39.619-17.772,39.619-39.619s-17.772-39.619-39.619-39.619s-39.619,17.773-39.619,39.619
-                    S230.32,219.947,252.165,219.947z M252.165,165.09c8.403,0,15.238,6.835,15.238,15.238s-6.835,15.238-15.238,15.238
-                    c-8.403,<0-15 class="238-6 835-15 238-15 238S243 <<  7></7>6></76>"></0-15>5.09,252.165,165.09z"/>
+                    S230.32,219.947,252.165,219.947z M252.165,165.09c8.403,0,15.238,6.835,15.238,15.238s-6.835,15.238-15.238,15.238"/>
                   <path d="M206.451,227.465c0-21.847-17.773-39.619-39.619-39.619s-39.619,17.773-39.619,39.619s17.772,39.619,39.619,39.619
                     S206.451,249.311,206.451,227.465z M166.832,242.703c-8.403,0-15.238-6.835-15.238-15.238s6.835-15.238,15.238-15.238
                     s15.238,6.835,15.238,15.238S175.234,242.703,166.832,242.703z"/>
@@ -716,7 +739,6 @@
   <footer class="page-footer">
 
     <div class="page-footer__wrapper wrapper">
-
       <div class="page-footer__item">
 
         <h2 class="page-footer__heading">For questions and suggestions</h2>
@@ -736,10 +758,11 @@
         <address class="page-footer__address">London, South Park, 18st</address>
 
       </div>
-
     </div>
 
   </footer>
+
+  <script src="js/main.js"></script>
 
 </body>
 
