@@ -13,9 +13,9 @@
 .page-footer__item {
   box-sizing: border-box;
 
-  width: 443px;
-  padding-right: 150px;
-  padding-top: 80px;
+  width: 302px;
+  margin-right: 150px;
+  padding-top: 69px;
 }
 
 .page-footer__heading {
@@ -23,26 +23,26 @@
   margin-bottom: 36px;
   padding: 0;
 
-  font-family: "Georgia", sans-serif;
+  font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  letter-spacing: 2.6px;
+  letter-spacing: 2.2px;
 }
 
 .page-footer__mail,
-.page-footer__tel,
-.page-footer__address {
+.page-footer__tel {
   display: inline-block;
 
   position: relative;
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 57px;
+  padding-left: 64px;
   min-height: 50px;
 
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1.2px;
   color: #f1cdb3;
   font-style: normal;
   font-size: 20px;
@@ -86,11 +86,30 @@
 }
 
 .page-footer__address {
+  display: inline-block;
+
+  position: relative;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 46px;
+  min-height: 50px;
+
+  font-family: "Times New Roman", serif;
+  letter-spacing: 1.2px;
+  color: #f1cdb3;
+  font-style: normal;
+  font-size: 20px;
+  vertical-align: baseline;
+
+  &--margin-negative {
+    margin-top: -8px;
+  }
+
   &::before {
     content: "";
 
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 26px;
     height: 36px;
